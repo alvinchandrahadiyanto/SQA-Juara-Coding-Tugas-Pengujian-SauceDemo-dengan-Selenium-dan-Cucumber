@@ -55,4 +55,8 @@ public class ProductsPage {
             button.click();
         }
     }
+
+    public void goToCartPage() {
+        shoppingCart.click();
+    }
 }
