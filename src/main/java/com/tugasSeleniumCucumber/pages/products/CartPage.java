@@ -8,11 +8,22 @@ import org.openqa.selenium.support.PageFactory;
 public class CartPage {
     private WebDriver driver;
 
-    @FindBy(id = "user-name")
-    WebElement usernameElement;
+    @FindBy(id = "continue-shopping")
+    WebElement continueShopping;
+
+    @FindBy(id = "checkout")
+    WebElement checkout;
 
     public CartPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public void clickContinueShoppingButton() {
+        continueShopping.click();
+    }
+
+    public void clickCheckoutButton() {
+        checkout.click();
     }
 }

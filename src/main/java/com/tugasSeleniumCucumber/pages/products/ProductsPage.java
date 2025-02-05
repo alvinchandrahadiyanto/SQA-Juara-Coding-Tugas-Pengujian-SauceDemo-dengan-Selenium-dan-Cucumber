@@ -18,6 +18,9 @@ public class ProductsPage {
     @FindBy(xpath = "//div[@class='app_logo']")
     private WebElement welcomeHeadingElement;
 
+    @FindBy(xpath = "//*[@id=\\\"shopping_cart_container\\")
+    private WebElement shoppingCart;
+
     private WebDriverWait wait;
 
     @Getter
