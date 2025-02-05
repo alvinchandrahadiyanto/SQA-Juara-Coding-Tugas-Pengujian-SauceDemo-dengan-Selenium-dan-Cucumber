@@ -9,10 +9,17 @@ public class CheckoutComplete {
     private WebDriver driver;
 
     @FindBy(id = "back-to-products")
+    WebElement thankYouElement;
+
+    @FindBy(id = "back-to-products")
     WebElement backHome;
 
     public CheckoutComplete(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public void clickBackHomeButton() {
+        backHome.click();
     }
 }

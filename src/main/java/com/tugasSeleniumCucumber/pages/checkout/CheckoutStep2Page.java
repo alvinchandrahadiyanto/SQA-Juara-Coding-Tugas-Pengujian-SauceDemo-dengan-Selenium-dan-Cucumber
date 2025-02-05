@@ -18,4 +18,12 @@ public class CheckoutStep2Page {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+    public void clickFinishCheckoutButton() {
+        finishCheckout.click();
+    }
+
+    public void clickCancelCheckout2CheckoutButton() {
+        cancelCheckout2.click();
+    }
 }

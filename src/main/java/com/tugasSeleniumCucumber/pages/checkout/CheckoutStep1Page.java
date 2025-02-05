@@ -39,4 +39,12 @@ public class CheckoutStep1Page {
     public void fillPostalCode(String postalCode) {
         postalCodeElement.sendKeys(postalCode);
     }
+
+    public void clickContinueCheckoutButton() {
+        continueCheckout.click();
+    }
+
+    public void clickCancelCheckout1CheckoutButton() {
+        cancelCheckout1.click();
+    }
 }
