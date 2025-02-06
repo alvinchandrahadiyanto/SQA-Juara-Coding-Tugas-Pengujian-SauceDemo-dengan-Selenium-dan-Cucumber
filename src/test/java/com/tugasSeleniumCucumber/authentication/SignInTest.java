@@ -16,17 +16,8 @@ public class SignInTest {
         driver = DriverSingleton.driver;
     }
 
-    public void signInTest() {
+    public void goToSignInPage() {
         driver.get("https://www.saucedemo.com/");
         signInPage = new SignInPage(driver);
-        signInPage.loginActivity("admin", "admin");
-
-        productsPage = new ProductsPage(driver);
-
-        String expected = "Swag Labs";
-        String actual = productsPage.getTextWelocmeHeadingElement();
-
-//        Assert.assertTrue(actual.toLowerCase().equals(expected.toLowerCase()));
-        Assert.assertEquals(actual.toLowerCase(), expected.toLowerCase());
     }
 }

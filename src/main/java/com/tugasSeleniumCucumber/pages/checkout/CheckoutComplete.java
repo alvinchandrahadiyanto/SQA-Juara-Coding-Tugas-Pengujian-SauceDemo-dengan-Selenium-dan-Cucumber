@@ -1,5 +1,6 @@
 package com.tugasSeleniumCucumber.pages.checkout;
 
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CheckoutComplete {
     private WebDriver driver;
 
+    @Getter
     @FindBy(id = "back-to-products")
     WebElement thankYouElement;
 
@@ -22,4 +24,5 @@ public class CheckoutComplete {
     public void clickBackHomeButton() {
         backHome.click();
     }
+
 }

@@ -11,12 +11,12 @@ public class CheckoutTest {
     private CartPage cartPage;
     private WebDriver driver;
 
-    public void checkoutTest () {
+    public void checkoutTest (String firstName, String lastName, String postalCode) {
         driver.get("https://www.saucedemo.com/cart.html");
         cartPage.clickCheckoutButton();
-        checkoutStep1.fillFirstName("Budi");
-        checkoutStep1.fillLastName("Setiawan");
-        checkoutStep1.fillPostalCode("1234");
+        checkoutStep1.fillFirstName(firstName);
+        checkoutStep1.fillLastName(lastName);
+        checkoutStep1.fillPostalCode(postalCode);
         checkoutStep1.clickContinueCheckoutButton();
         checkoutStep2.clickFinishCheckoutButton();
     }
