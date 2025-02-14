@@ -8,7 +8,8 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/resources/features/login.feature",
         },
         glue = {
-                "jc.belajar.cucumber.definitions",
+                "com.tugasSeleniumCucumber.hooks",
+                "com.tugasSeleniumCucumber.steps",
         }
 )
 public class RunnerTest extends AbstractTestNGCucumberTests {

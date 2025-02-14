@@ -13,11 +13,11 @@ public class SignInTest {
     private WebDriver driver;
 
     public void setup() {
-        driver = DriverSingleton.driver;
+        driver = DriverSingleton.getDriver();
     }
 
     public void goToSignInPage() {
-        driver.get("https://www.saucedemo.com/");
+
         signInPage = new SignInPage(driver);
     }
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage {
+    private String baseURL = "https://www.saucedemo.com/";
     private WebDriver driver;
 
     @FindBy(id = "user-name")
@@ -20,6 +21,10 @@ public class SignInPage {
     public SignInPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public void openPage() {
+        driver.get(baseURL);
     }
 
     public void fillUsername(String username) {
